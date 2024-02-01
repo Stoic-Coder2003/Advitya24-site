@@ -5,6 +5,7 @@ import Landingpage from '../Landingpage';
 import DesignDevelop from '../DesignDevelop/DesignDevelop';
 import Highlights from '../Highlights/Highlights';
 import Countdown from '../Countdown/Countdown';
+import EventSchedule from '../EventSchedule/EventSchedule';
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <DesignDevelop />
             <Highlights />
             <Countdown />
+            <EventSchedule />
         </div>
     );
 }

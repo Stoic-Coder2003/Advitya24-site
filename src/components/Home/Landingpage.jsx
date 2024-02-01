@@ -15,7 +15,7 @@ function Landingpage() {
              </div>
 
 
-                <div className='w-full fixed top-[-25px]'>
+                <div className='w-full fixed top-[-25px] z-10'>
                 <Navbar />
                 </div>
             </section>
