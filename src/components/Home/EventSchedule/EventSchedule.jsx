@@ -43,7 +43,7 @@ const cardData = [
 
 function EventSchedule() {
     return (
-        <section className='flex flex-col justify-center mb-96 items-center'>
+        <section className='flex flex-col justify-center mb-60 items-center'>
             <p className='font-[Rubik] text-7xl font-semibold mb-24'>Event Schedule</p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-x-16 gap-y-20">
             {cardData.map((card) => (

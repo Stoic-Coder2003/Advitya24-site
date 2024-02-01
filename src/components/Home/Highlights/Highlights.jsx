@@ -20,7 +20,7 @@ function Highlights() {
   return (
     <section className='flex flex-col justify-center items-center mb-80'>
       <p className='font-[Rubik] text-[64px] font-semibold mb-14'>AdVITya’23 highlights</p>
-      <div className='videos rounded-3xl bg-contain' onClick={Video}>
+      <div className='videos rounded-3xl bg-contain cursor-pointer' onClick={Video}>
         {playVideo ? (
           <YouTube videoId="j-b2v8ZaOfM" opts={opts} />
         ) : (

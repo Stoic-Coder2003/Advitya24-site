@@ -1,11 +1,12 @@
 import React from 'react';
 import './Home.css';
 import AboutadVITya from '../About/AboutadVITya';
-import Landingpage from '../Landingpage';
+import Landingpage from './Landingpage';
 import DesignDevelop from '../DesignDevelop/DesignDevelop';
 import Highlights from '../Highlights/Highlights';
 import Countdown from '../Countdown/Countdown';
 import EventSchedule from '../EventSchedule/EventSchedule';
+import { Footer } from '../../Footer/Footer';
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Highlights />
             <Countdown />
             <EventSchedule />
+            <Footer />
         </div>
     );
 }
