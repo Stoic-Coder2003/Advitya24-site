@@ -15,7 +15,7 @@ function Landingpage() {
              </div>
 
 
-                <div className='w-full fixed top-[-25px] z-10'>
+                <div className='w-full fixed z-10 top-0 bg-[rgba(0, 0, 0, 0.07)] backdrop-blur'>
                 <Navbar />
                 </div>
             </section>
