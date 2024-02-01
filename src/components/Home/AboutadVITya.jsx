@@ -19,7 +19,7 @@ function AboutadVITya() {
                     <Encrypt />
                 </div>
                 <div className='rightdiv'>
-                    <img src="images\Group 5.png" alt="img1" />
+                    <img src="public\images\Group 5.png" alt="img1" />
                 </div>
             </section>
     )
