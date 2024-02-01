@@ -2,7 +2,7 @@ import React from 'react';
 import ParticleRing1 from './components/Signup/ParticleRing1';
 import ParticleRing from './components/Signin/ParticleRing';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
+import Home from './components/Home/Homepage/Home';
 
 function App() {
   return (
