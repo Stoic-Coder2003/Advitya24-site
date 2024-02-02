@@ -1,6 +1,5 @@
 import React from 'react';
-import ParticleRing1 from './components/Signup/ParticleRing1';
-import ParticleRing from './components/Signin/ParticleRing';
+import Signin from './components/Signin/Signin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Homepage/Home';
 
@@ -10,8 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signin" element={<ParticleRing />} />
-          <Route path="/signup" element={<ParticleRing1 />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </Router>
     </>

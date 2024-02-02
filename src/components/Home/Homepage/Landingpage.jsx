@@ -13,11 +13,7 @@ function Landingpage() {
                     <p className='font-semibold text-white text-lg mt-8'>Embark on a journey where your event dreams come to life! Join us <br /> at adVITya, where creativity meets celebration, and unforgettable <br /> moments are made. Get ready for an extravaganza like never before. <br /> Your dreams, our canvas. Let the festivities begin!</p>
                 </div>
              </div>
-
-
-                <div className='w-full fixed z-10 top-0 bg-[rgba(0, 0, 0, 0.07)] backdrop-blur'>
                 <Navbar />
-                </div>
             </section>
     )
 }
