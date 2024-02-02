@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import './Home.css';
 import AboutadVITya from '../About/AboutadVITya';
 import Landingpage from './Landingpage';
@@ -11,15 +12,26 @@ import { Footer } from '../../Footer/Footer';
 function Home() {
     return (
         <div>
-            <Landingpage />
-            <AboutadVITya />
-            <DesignDevelop />
-            <Highlights />
-            <Countdown />
-            <EventSchedule />
+            <Element name="home">
+                <Landingpage />
+            </Element>
+            <Element name="about-section">
+                <AboutadVITya />
+            </Element>
+            <Element name="designdevelop">
+                <DesignDevelop />
+            </Element>
+            <Element name="highlights">
+                <Highlights />
+            </Element>
+            <Element name="events">
+                <Countdown />
+            </Element>
+            <Element name="eventschedule">
+                <EventSchedule />
+            </Element>
             <Footer />
         </div>
-        
     );
 }
 

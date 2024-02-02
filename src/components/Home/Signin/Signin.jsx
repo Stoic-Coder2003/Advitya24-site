@@ -13,11 +13,6 @@ function Signin() {
     <section>
       <div className="flex items-center">
       <div className="h-screen w-1/2">
-          {/* <img
-            className="mx-auto h-full w-full rounded-md object-cover"
-            src="https://images.pexels.com/photos/1317374/pexels-photo-1317374.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-          /> */}
           <ParticleRing />
         </div>
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24 w-1/2">
