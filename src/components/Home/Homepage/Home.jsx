@@ -19,6 +19,7 @@ function Home() {
             <EventSchedule />
             <Footer />
         </div>
+        
     );
 }
 
