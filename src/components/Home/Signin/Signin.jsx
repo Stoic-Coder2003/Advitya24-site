@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import ParticleRing from '../particles/ParticleRing';
+import { NavLink } from 'react-router-dom';
 
 function Signin() {
   const [showSecondForm, setShowSecondForm] = useState(false);
@@ -93,12 +94,12 @@ function Signin() {
                   </div>
                 </div>
                 <div>
-                  <button
-                    type="button"
+                  <NavLink to="/"
+                    
                     className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
                   >
                     Create Account <ArrowRight className="ml-2" size={16} />
-                  </button>
+                  </NavLink>
                 </div>
               </div>
             </form>
@@ -179,12 +180,11 @@ function Signin() {
                   </div>
                 </div>
                 <div>
-                  <button
-                    type="button"
+                  <NavLink to="/"
                     className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
                   >
                     Get started <ArrowRight className="ml-2" size={16} />
-                  </button>
+                  </NavLink>
                 </div>
               </div>
             </form>
