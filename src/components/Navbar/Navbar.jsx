@@ -26,7 +26,7 @@ function Navbar() {
           </button>
         </div>
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-transparent md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
             <NavLink
             to="/" 
@@ -74,11 +74,7 @@ function Navbar() {
                 Gallery
               </NavLink>
             </li>
-            <li>
-              <NavLink className={`cursor-pointer md:bg-transparent ${activeElement === 'helpdesk' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
-                Helpdesk
-              </NavLink>
-            </li>
+
           </ul>
         </div>
       </div>
