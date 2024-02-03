@@ -5,7 +5,7 @@ function Landingpage() {
     return (
         <section className='flex flex-col justify-center items-center relative mb-24'>
              <div className='relative'>
-                <img className='w-screen' src="public\images\Main-background.png" alt="main-bg" />
+                <img className='w-screen' src="images/Main-background.png" alt="main-bg" />
                 <div className='absolute top-1/2 left-1/4 transform -translate-y-1/2 -translate-x-1/2'>
                     <p className='text-[Inter] text-7xl font-black text-white'>
                     Where Event <br /> Dreams Transform <br /> Into Reality!

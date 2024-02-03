@@ -24,7 +24,7 @@ function Highlights() {
         {playVideo ? (
           <YouTube videoId="j-b2v8ZaOfM" opts={opts} />
         ) : (
-          <img src="public\images\video.png" alt="video" />
+          <img src="images/video.png" alt="video" />
         )}
       </div>
     </section>

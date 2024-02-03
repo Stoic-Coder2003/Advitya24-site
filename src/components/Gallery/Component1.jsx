@@ -28,7 +28,7 @@ function Component1() {
     return (
         <>
         <div className='flex items-end justify-center gap-4 mb-32'>
-            <img src="public\images\Banner.png" alt="img" />
+            <img src="images/Banner.png" alt="img" />
             <div className='flex flex-col justify-end gap-32'>
                 <h2 className='text-5xl font-bold pl-6'>AdVITya'23 <br /> <span className='text-[#0068CA] font-bold'>Event Gallery</span></h2>
             <div className='grid grid-cols-2 gap-4'>
