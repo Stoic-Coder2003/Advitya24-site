@@ -5,6 +5,7 @@ import Component2 from './Component2'
 import Component3 from './Component3'
 import Component4 from './Component4'
 import { Footer } from '../Footer/Footer'
+import './Gallery.css'
 
 function Gallery() {
     return (
