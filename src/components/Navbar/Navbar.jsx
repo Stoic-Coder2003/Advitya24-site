@@ -3,11 +3,21 @@ import { NavLink } from 'react-router-dom';
 import { Link as ScrollLink, Element } from 'react-scroll';
 
 function Navbar() {
+  
   const [activeElement, setActiveElement] = useState(null);
+
+  const [galleryPage, setGalleryPage] = useState(false);
+
+  function isGalleryPage() {
+    const pathname = window.location.pathname;
+    let bol = (pathname === '/gallery');
+    if(bol)
+      setGalleryPage(!galleryPage);
+  }
 
   const changeColor = (element) => {
     setActiveElement(element);
-  }
+  };
 
   return (
     <nav className="bg-[rgba(0, 0, 0, 0.07)] backdrop-blur fixed w-full z-20 top-0 start-0 font=[Poppins]">
@@ -26,7 +36,9 @@ function Navbar() {
           </button>
         </div>
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-transparent md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+            
             <li>
             <NavLink
             to="/" 
@@ -41,8 +53,9 @@ function Navbar() {
             >Home
             </NavLink>
             </li>
+            
             <li>
-              <ScrollLink
+              {/* <ScrollLink
                 to="about-section"
                 smooth={true}
                 duration={1000}
@@ -53,9 +66,42 @@ function Navbar() {
                 className={`cursor-pointer md:bg-transparent ${activeElement === 'about' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
               >
                 About us
+              </ScrollLink> */}
+              {galleryPage ? (
+              <span className="cursor-default text-gray-800">About us</span>
+            ) : (
+              <ScrollLink
+              to="about-section"
+              smooth={true}
+              duration={1000}
+              offset={-50}
+              spy={true}
+              exact="true"
+              onClick={() => changeColor('about')}
+              className={`cursor-pointer md:bg-transparent ${activeElement === 'about' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
+              >
+                About us
               </ScrollLink>
+            )}
             </li>
+            
             <li>
+              {/* <ScrollLink
+                NavLink
+                to="events"
+                smooth={true}
+                duration={1000}
+                offset={-50}
+                spy={true}
+                exact="true"
+                onClick={() => changeColor('events')}
+                className={`cursor-pointer md:bg-transparent ${activeElement === 'events' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
+              >
+                Events
+              </ScrollLink> */}
+              {galleryPage ? (
+              <span className="cursor-default text-gray-400">Events</span>
+            ) : (
               <ScrollLink
                 to="events"
                 smooth={true}
@@ -68,7 +114,9 @@ function Navbar() {
               >
                 Events
               </ScrollLink>
+            )}
             </li>
+            
             <li>
               <NavLink to="/gallery" className={`cursor-pointer md:bg-transparent ${activeElement === 'gallery' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
                 Gallery

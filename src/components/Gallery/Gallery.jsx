@@ -8,6 +8,7 @@ import { Footer } from '../Footer/Footer'
 import './Gallery.css'
 
 function Gallery() {
+
     return (
         <div className='gap-10 font-[Poppins]'>
         <div className='mb-24'>
