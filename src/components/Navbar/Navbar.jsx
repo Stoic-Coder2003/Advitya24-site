@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link as ScrollLink, Element } from 'react-scroll'; // Import Element
+import { Link as ScrollLink, Element } from 'react-scroll';
 
 function Navbar() {
   const [activeElement, setActiveElement] = useState(null);
@@ -10,7 +10,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-[rgba(0, 0, 0, 0.07)] backdrop-blur fixed w-full z-20 top-0 start-0">
+    <nav className="bg-[rgba(0, 0, 0, 0.07)] backdrop-blur fixed w-full z-20 top-0 start-0 font=[Poppins]">
       <div className="flex flex-wrap items-center justify-between mx-auto py-4 px-10">
         <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse w-36">
           <span className={`self-center text-2xl font-semibold whitespace-nowrap text-gray-500`}>AdVITya'24</span>
@@ -28,19 +28,18 @@ function Navbar() {
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
-              <ScrollLink
-                to="home" 
-                smooth={true}
-                duration={1000}
-                offset={-50}
-                spy={true}
-                exact="true"
-                onClick={() => changeColor('home')}
-                className={` bg-blue-700 rounded md:bg-transparent ${activeElement === 'home' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
-                aria-current="page"
-              >
-                Home
-              </ScrollLink>
+            <NavLink
+            to="/" 
+            smooth={true}
+            duration={1000}
+            offset={-50}
+            spy={true}
+            exact="true"
+            onClick={() => changeColor('home')}
+            className={`cursor-pointer bg-blue-700 rounded md:bg-transparent ${activeElement === 'home' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
+            aria-current="page"
+            >Home
+            </NavLink>
             </li>
             <li>
               <ScrollLink
@@ -51,7 +50,7 @@ function Navbar() {
                 spy={true}
                 exact="true"
                 onClick={() => changeColor('about')}
-                className={` md:bg-transparent ${activeElement === 'about' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
+                className={`cursor-pointer md:bg-transparent ${activeElement === 'about' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
               >
                 About us
               </ScrollLink>
@@ -65,18 +64,18 @@ function Navbar() {
                 spy={true}
                 exact="true"
                 onClick={() => changeColor('events')}
-                className={` md:bg-transparent ${activeElement === 'events' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
+                className={`cursor-pointer md:bg-transparent ${activeElement === 'events' ? 'text-blue-700 border-b-2 border-blue-700' : 'text-gray-500 md:hover:text-slate-400 md:hover:border-b-2'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}
               >
                 Events
               </ScrollLink>
             </li>
             <li>
-              <NavLink className={`md:bg-transparent ${activeElement === 'gallery' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
+              <NavLink to="/gallery" className={`cursor-pointer md:bg-transparent ${activeElement === 'gallery' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
                 Gallery
               </NavLink>
             </li>
             <li>
-              <NavLink className={`md:bg-transparent ${activeElement === 'helpdesk' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
+              <NavLink className={`cursor-pointer md:bg-transparent ${activeElement === 'helpdesk' ? 'text-blue-700' : 'text-gray-500'} md:p-0 md:hover:text-slate-400 md:hover:border-b-2`}>
                 Helpdesk
               </NavLink>
             </li>

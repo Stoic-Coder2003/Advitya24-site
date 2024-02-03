@@ -15,7 +15,7 @@ const LoadingSpinner = () => {
         zIndex: '9999', // Adjust the z-index as needed
       }}
     >
-      <l-quantum size="45" speed="1.75" color="black"></l-quantum>
+      <l-quantum size="45" speed="1.75" color="white"></l-quantum>
     </div>
   );
 };
