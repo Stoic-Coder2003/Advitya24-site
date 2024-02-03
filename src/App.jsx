@@ -5,6 +5,7 @@ import Signin from './components/Home/Signin/Signin';
 import LoadingSpinner from './components/LoadingSpinner';
 import Gallery from './components/Gallery/Gallery';
 import Error404 from './components/ErrorPage/Error404';
+import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
